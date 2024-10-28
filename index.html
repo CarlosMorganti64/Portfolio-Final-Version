@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="main.css" />
+<title>My-portfolio-of-me-version-final</title>
+</head>
+
+<body>
+	<div id="container">
+		<header><h1><b>Portfolio about yours truly :) </b></h1></header>
+		<nav></nav>
+		<section>
+		<article class="left">More stuff to be added eventually ;) 
+			<p><a> Here is how it looks right now</a></p>
+			
+			
+		
+			
+			</article>
+		<article class="right">A liitle about myself: I am from Puerto Rico. I am 19 years old. I have been in Texas for roughly 15 years of my life. I am a self taught artist too. 
+			<main><img src="Map-of-PR.png" width="150px"></main>
+
+			
+			
+			</article>
+			<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+<script>
+var w;
+
+function startWorker() {
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+  }
+}
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+}
+</script>
+		</section>
+		<footer>PIZZ Entertainment,2024</footer>
+		
+	</div>
+	
+	
+	
+	
+</body>
+</html>

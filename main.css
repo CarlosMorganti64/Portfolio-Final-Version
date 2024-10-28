@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+ 
+
+#container{
+	width: 800px;
+		margin: 0px auto;
+	
+}
+body{background:url(Background-for-web.jpg)no-repeat fixed top left;background-size: cover;}
+	
+.left{
+	width:360px;
+	height:150px;
+	background-color:rgba(255,184,114,0.83);
+	border-radius: 20px;
+	float:left;
+	margin: 0px 10px 10px 15px;
+	padding: 10px 10px 10px 10px;
+	border: rgba(255,141,54,1.00) solid;
+	visibility:visible;
+	display: flex
+}
+
+.right{
+	width:360px;
+	height:150px;
+	background-color:rgba(255,184,114,0.83);
+	border-radius: 20px;	
+	float:left;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 10px 10px 10px;
+	border: rgba(255,141,54,1.00) solid;
+	visibility:visible;
+	display: flex;
+}
+footer{
+	background-color:rgba(255,176,107,0.69);
+	clear:both;
+	
+}
+
+header>h1{
+	text-align: center;
+		color:rgba(19,11,5,1.00);
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+.left a:link {
+	color:peru;
+	text-decoration: none;
+}
+.left a:hover{
+	font-size: 1.2em;
+	color: tomato;
+}
+.left a:visted{
+	color: darkred
+}
+
+.left {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.right {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+
+}
+}
+/* Mobile view */
+@media (max-width: 960px) {
+    #container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    body {
+        background: url(Background-for-web.jpg) no-repeat fixed center center;
+        background-size: cover;
+    }
+    .left, .right {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding: 15px;
+        display: block;
+		background-color:rgba(255,184,114,0.83);
+		border: rgba(255,141,54,1.00) solid;
+	visibility:visible;
+    }
+    footer {
+        background-color: rgba(255, 176, 107, 0.69);
+        clear: both;
+    }
+}
